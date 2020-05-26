@@ -22,6 +22,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    - name: create a variable
+      run: newVar=45
+    
+    - name: print the variable
+      run: echo newVar
+
     # Runs a single command using the runners shell
     - name: install terraform
       run: wget -O terraform.zip https://releases.hashicorp.com/terraform/0.12.25/terraform_0.12.25_linux_amd64.zip
