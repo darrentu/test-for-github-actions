@@ -26,7 +26,7 @@ jobs:
       run: newVar=45
     
     - name: print the variable
-      run: echo $newVar
+      run: echo $(cat newVar)
 
     # Runs a single command using the runners shell
     - name: install terraform
